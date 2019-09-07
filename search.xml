@@ -4,22 +4,9 @@
   
     
     <entry>
-      <title>fd</title>
-      <link href="/articles/2019/09/06/fd/"/>
-      <url>/articles/2019/09/06/fd/</url>
-      
-        <content type="html"><![CDATA[<h1 id="部署网站成功"><a href="#部署网站成功" class="headerlink" title="部署网站成功"></a>部署网站成功</h1><p>ok</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ok</title>
-      <link href="/articles/2019/09/06/ok/"/>
-      <url>/articles/2019/09/06/ok/</url>
+      <title></title>
+      <link href="/articles/2019/09/07/python/quan-zhan-kai-fa-vue-django-rest-framework/quan-zhan-kai-fa-vue-django-rest-framework/"/>
+      <url>/articles/2019/09/07/python/quan-zhan-kai-fa-vue-django-rest-framework/quan-zhan-kai-fa-vue-django-rest-framework/</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -30,11 +17,76 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/articles/2019/09/06/hello-world/"/>
-      <url>/articles/2019/09/06/hello-world/</url>
+      <title></title>
+      <link href="/articles/2019/09/07/python/tensorflow/readme/"/>
+      <url>/articles/2019/09/07/python/tensorflow/readme/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="请下载PDF文件查看原图"><a href="#请下载PDF文件查看原图" class="headerlink" title="请下载PDF文件查看原图"></a>请下载PDF文件查看原图</h1><p><img src="https://github.com/AYiXi/Learn-for-life/blob/master/Python/Tensorflow/Tensorflow.jpg" alt="Tensorflow"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/articles/2019/09/07/python/python-interview-backend/readme/"/>
+      <url>/articles/2019/09/07/python/python-interview-backend/readme/</url>
+      
+        <content type="html"><![CDATA[<h1 id="请下载PDF文件查看原图"><a href="#请下载PDF文件查看原图" class="headerlink" title="请下载PDF文件查看原图"></a>请下载PDF文件查看原图</h1><p><img src="https://github.com/AYiXi/Learn-for-life/blob/master/Python/Python%20Interview(Backend)/Python%20Interview(Backend).jpg" alt="Python Interview(Backend)"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/articles/2019/09/07/python/django/user-model-create/"/>
+      <url>/articles/2019/09/07/python/django/user-model-create/</url>
+      
+        <content type="html"><![CDATA[<h3 id="关于用户系统"><a href="#关于用户系统" class="headerlink" title="关于用户系统"></a>关于用户系统</h3><blockquote><ol><li>使用 django 内置的 User 系统, 需要重新定制</li><li>前后台通用一个 User 系统</li></ol></blockquote><h3 id="自定义-User-模型"><a href="#自定义-User-模型" class="headerlink" title="自定义 User 模型"></a>自定义 User 模型</h3><blockquote><ol><li><p>创建一个 xfzauth(内置的app叫auth) 的 app, 全部重写,  继承自 AbstractBaseUser</p></li><li><p>定义 UserManager</p></li><li><p>设置 AUTH_USER_MODEL</p></li><li><p>映射到数据库中</p></li><li><p>主键是uuid, 用于保密用户数量信息(shortuuidfield)</p></li><li><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> shortuuidfield <span class="token keyword">import</span> ShortUUIDField   <span class="token keyword">class</span> <span class="token class-name">User</span><span class="token punctuation">(</span>AbstractBaseUser<span class="token punctuation">,</span> PermissionMixin<span class="token punctuation">)</span>      uid <span class="token operator">=</span> ShortUUIDField<span class="token punctuation">(</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>      <span class="token punctuation">.</span>       <span class="token punctuation">.</span>       <span class="token punctuation">.</span>      USERNAME_FIELD <span class="token operator">=</span> <span class="token string">'telephone'</span>       REQUIRED_FIELDS <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'username'</span><span class="token punctuation">]</span></code></pre></li><li></li></ol></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/articles/2019/09/07/python/celery/celery/"/>
+      <url>/articles/2019/09/07/python/celery/celery/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Celery"><a href="#Celery" class="headerlink" title="Celery"></a>Celery</h1><h2 id="Celery-是什么"><a href="#Celery-是什么" class="headerlink" title="Celery 是什么?"></a>Celery 是什么?</h2><ol><li>分布式系统</li><li>实时处理的异步任务队列</li><li>支持任务调度</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/"/>
+      <url>/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/</url>
+      
+        <content type="html"><![CDATA[<h1 id="天文学通识课"><a href="#天文学通识课" class="headerlink" title="天文学通识课"></a>天文学通识课</h1><h3 id="宇宙学原理-天文学的第一定理"><a href="#宇宙学原理-天文学的第一定理" class="headerlink" title="宇宙学原理, 天文学的第一定理"></a>宇宙学原理, 天文学的第一定理</h3><blockquote><p>地球不特殊, 地球上的规律在其他地方也使用</p></blockquote><h3 id="光谱分析-宇宙学原理的实证"><a href="#光谱分析-宇宙学原理的实证" class="headerlink" title="光谱分析, 宇宙学原理的实证"></a>光谱分析, 宇宙学原理的实证</h3><blockquote><p>光谱分析是天文学里的显微镜, 能知道上亿光年距离的天体的元素构成</p><p>天文学家在恒星和其他天体上面验证了宇宙学原理</p><p>宇宙膨胀会导致光谱红移, 需消除误差才能知道元素构成, 也是有效的测距手段</p></blockquote><h3 id="距离测量-宇宙学原理的推进器"><a href="#距离测量-宇宙学原理的推进器" class="headerlink" title="距离测量, 宇宙学原理的推进器"></a>距离测量, 宇宙学原理的推进器</h3><blockquote><p>高度, 视觉大小, 红移程度等很多参数会受距离影响, 把距离因素消除后才满足宇宙学原理</p><p>天文学测量距离方法多种, 由近到远用 <code>恒星视差法</code>, <code>标准烛光法</code>, <code>红移测距</code></p></blockquote><h3 id="模型体系-天文学的核心框架"><a href="#模型体系-天文学的核心框架" class="headerlink" title="模型体系, 天文学的核心框架"></a>模型体系, 天文学的核心框架</h3><blockquote><p>天文学不能像其他学科那样反复实验, 只能依赖有限的观测数据, 所以必须通过模型的猜测推动理论前行</p><p>天文学需要将模型尽可能多的联系起来才更可靠</p><p>模型体系成就了天文学的认知方法, 甚至把有限的数据信息放大成了丰富的知识, 这就是天文学的核心框架</p></blockquote><h3 id="宇宙的边界在哪里"><a href="#宇宙的边界在哪里" class="headerlink" title="宇宙的边界在哪里?"></a>宇宙的边界在哪里?</h3><blockquote><p>由于观测上的各项同性, 宇宙尺度远远超过我们的观察范围</p><p>因为宇宙年龄有限, 光速有限, 所以可观测宇宙只是整个宇宙的很小一部分</p><p>由于宇宙还在加速膨胀, 退行速度超过光速, 所以有大量区域我们永远不可能观测到</p></blockquote><h3 id="宇宙过去发生过什么"><a href="#宇宙过去发生过什么" class="headerlink" title="宇宙过去发生过什么?"></a>宇宙过去发生过什么?</h3><blockquote><p>前质子时代, 宇宙诞生, 开始暴涨, 诞生了四种作用力和中子质子</p><p>质子时代, 辐射从中脱离, 产生光</p><p>原子时代, 物质形成, 但还没有产生恒星这样的光源</p><p>恒星时代, 宇宙被点亮</p><p>暗能量时代, 物质密度已经小于暗能量, 引力影响小于膨胀的趋势, 宇宙加速膨胀下去</p></blockquote><h3 id="如何探索外星生命"><a href="#如何探索外星生命" class="headerlink" title="如何探索外星生命?"></a>如何探索外星生命?</h3><blockquote><p>人类文明不特殊, 相信有外星人存在</p><p>土卫二是太阳系中最可能存在生命的星球</p><p>无法探索的地方, 我们在宇宙学原理下寻找线索, 比如寻找宜居带和戴森球, 或者直接接受外星人的信息</p></blockquote><h3 id="太阳是天文学的枢纽"><a href="#太阳是天文学的枢纽" class="headerlink" title="太阳是天文学的枢纽"></a>太阳是天文学的枢纽</h3><blockquote><p>太阳是离我们最近的恒星, 所以我们了解最详细</p><p>太阳关联着天文学和物理学的大量模型, 是天文学模型体系里最深的一环, 关系着整个天文学的稳定</p><p>理解了太阳才能理解更远处的恒星</p></blockquote><h3 id="日震是了解太阳内部的天然B超"><a href="#日震是了解太阳内部的天然B超" class="headerlink" title="日震是了解太阳内部的天然B超"></a>日震是了解太阳内部的天然B超</h3><blockquote><p>太阳不透明, 但仍可以通过核聚变理论知道太阳一定有一个日核</p><p>通过太阳的发光发热模型, 从能量传递的方式可以推测出太阳内部还有辐射层和对流层</p><p>太阳亮度 5 分钟一次脉搏跳动, 像B超一样帮助我们了解内部结构</p></blockquote><h3 id="狂暴是太阳的另一张面孔"><a href="#狂暴是太阳的另一张面孔" class="headerlink" title="狂暴是太阳的另一张面孔"></a>狂暴是太阳的另一张面孔</h3><blockquote><p>太阳风暴是太阳的剧烈波动, 会释放巨大能量对地球通讯造成严重影响</p><p>太阳活动有规律, 和太阳黑子出现的周期一样是 11 年</p><p>天文学知道这些活动与太阳磁场有关系, 但是更深刻的原因还不理解, 这也是未来需要回答的问题</p></blockquote><h3 id="太阳系的主宰是太阳"><a href="#太阳系的主宰是太阳" class="headerlink" title="太阳系的主宰是太阳"></a>太阳系的主宰是太阳</h3><blockquote><p>小行星都是太阳形成时候的边角废料</p></blockquote><h3 id="决定行星宿命的引力"><a href="#决定行星宿命的引力" class="headerlink" title="决定行星宿命的引力"></a>决定行星宿命的引力</h3><blockquote><p>行星彼此引力不可忽略</p><p>行星到太阳距离有某种数学规律, 还与引力相关</p><p>天体位置并不随机分布, 而是一些特定的位置, 这是长期演化的结果</p></blockquote><h3 id="太阳的影响力决定太阳系的边界"><a href="#太阳的影响力决定太阳系的边界" class="headerlink" title="太阳的影响力决定太阳系的边界"></a>太阳的影响力决定太阳系的边界</h3><blockquote><p>边界目前不同的定义有不同的结果</p><p>目前认为最外围是奥尔特云, 那里是长周期彗星产生的地方</p><p>边界是引力边界</p></blockquote><h3 id="月球-地球的稳定器"><a href="#月球-地球的稳定器" class="headerlink" title="月球, 地球的稳定器"></a>月球, 地球的稳定器</h3><blockquote><p>月球和别的卫星比太大了, 是一个奇特的系统</p><p>月球对地球生命有直接的影响, 月球的引力造成潮汐, 潮汐产生摩擦力让地球自转逐渐减速, 月球是地球的刹车片和稳定器</p></blockquote><h3 id="火星-地球的备胎"><a href="#火星-地球的备胎" class="headerlink" title="火星, 地球的备胎"></a>火星, 地球的备胎</h3><blockquote><p>火星可能适合宜居</p><p>火星磁场消失, 无法抵御太阳风, 所以水被破坏,  形成了没有生机的世界</p></blockquote><h3 id="木星-为生命带来了可能性"><a href="#木星-为生命带来了可能性" class="headerlink" title="木星, 为生命带来了可能性"></a>木星, 为生命带来了可能性</h3><blockquote><p>质量大, 有强大引力, 可以做引力弹弓, 给航天器提供加速</p><p>气态巨行星, 体积巨大, 形成时间早, 可以研究太阳系早期物质</p><p>太阳系形成之初, 木星轨道发生了改变, 造成连锁反应, 小行星和彗星撞向地球, 为地球带来了水</p></blockquote><h3 id="冥王星-一场行星定义的革命"><a href="#冥王星-一场行星定义的革命" class="headerlink" title="冥王星, 一场行星定义的革命"></a>冥王星, 一场行星定义的革命</h3><blockquote><p>2006 年国际天文学会把冥王星降级为矮行星, 从此太阳系只有八大行星</p><p>降级换来了更准确, 系统的行星定义</p></blockquote><h3 id="赫罗图-理解恒星的最简界面"><a href="#赫罗图-理解恒星的最简界面" class="headerlink" title="赫罗图, 理解恒星的最简界面"></a>赫罗图, 理解恒星的最简界面</h3><blockquote><p><img src="%E8%B5%AB%E7%BD%97%E5%9B%BE.png" alt="赫罗图"></p></blockquote><h3 id="恒星质量-恒星命运的决定因素"><a href="#恒星质量-恒星命运的决定因素" class="headerlink" title="恒星质量, 恒星命运的决定因素"></a>恒星质量, 恒星命运的决定因素</h3><blockquote><p>恒星稳定存在是因为核聚变的能量释放和引力之间的平衡</p><p>更大质量的恒星最终可能会爆发为超新星, 所以质量可以决定恒星的一生</p></blockquote><h3 id="双星-互动中的恒星"><a href="#双星-互动中的恒星" class="headerlink" title="双星, 互动中的恒星"></a>双星, 互动中的恒星</h3><blockquote><p>双星容易是赫罗图的例外</p><p>双星很复杂, 会交换彼此的物质, 影响演化进程</p><p>双星是宇宙中更为普遍的情况</p></blockquote><h3 id="超新星-星系间的灯塔"><a href="#超新星-星系间的灯塔" class="headerlink" title="超新星, 星系间的灯塔"></a>超新星, 星系间的灯塔</h3><blockquote><p>超新星非常明亮, 释放巨大能量</p><p>太近的话, 可能会对地球造成毁灭性打击</p></blockquote><h3 id="银河系的空间结构"><a href="#银河系的空间结构" class="headerlink" title="银河系的空间结构"></a>银河系的空间结构</h3><blockquote><p>我们在银河系内部, 故而无法观察到银河系的全貌</p><p>我们只能通过观察其他星系, 再推广到银河系上</p></blockquote><h3 id="银河系的演化"><a href="#银河系的演化" class="headerlink" title="银河系的演化"></a>银河系的演化</h3><h3 id="黑洞-星系的中心"><a href="#黑洞-星系的中心" class="headerlink" title="黑洞, 星系的中心"></a>黑洞, 星系的中心</h3><blockquote><p>只能看到黑洞视界以外的地方</p><p>黑洞只能观测到三个参数, 质量, 自转的角动量, 带电量</p><p>恒星死亡后是小黑洞, 星系中心的黑洞是超大黑洞</p></blockquote><h3 id="类星体-远古星系的遗迹"><a href="#类星体-远古星系的遗迹" class="headerlink" title="类星体, 远古星系的遗迹"></a>类星体, 远古星系的遗迹</h3><blockquote><p>类星体是活跃的星系核心, 特别明亮, 可以观测到非常遥远的类星体, 大大地提高了天文学的视野</p><p>类星体这么远距离依然这么亮, 它释放的能量巨大, 必须用黑洞活动来解释</p><p>类星体就是活动的星系中心的一个超大质量黑洞, 正在吞噬周围物质</p></blockquote><h3 id="暗物质-星系里的粘合剂"><a href="#暗物质-星系里的粘合剂" class="headerlink" title="暗物质, 星系里的粘合剂"></a>暗物质, 星系里的粘合剂</h3><blockquote><p>暗物质是星系团速度与质量矛盾后天文学家提出的</p><p>暗物质看不见, 但存在引力, 不产生电磁辐射, 也不参与别的作用</p></blockquote><h3 id="宇宙的形状-宇宙学的基本问题"><a href="#宇宙的形状-宇宙学的基本问题" class="headerlink" title="宇宙的形状, 宇宙学的基本问题"></a>宇宙的形状, 宇宙学的基本问题</h3><blockquote><p>宇宙的形状连接着物质密度, 宇宙膨胀速度, 宇宙年龄等一系列宇宙学参数</p></blockquote><h3 id="暴胀理论-宇宙学的补丁"><a href="#暴胀理论-宇宙学的补丁" class="headerlink" title="暴胀理论, 宇宙学的补丁"></a>暴胀理论, 宇宙学的补丁</h3><blockquote><p>一场极其剧烈的暴胀, 解决了大爆炸的几个 BUG , 分别是视界的因果关系问题, 空间的平坦问题和磁单极子问题</p><p>目前该理论还有质疑, 以后或许会被更好的理论修复</p></blockquote><h3 id="微波背景辐射-宇宙学的观测基础"><a href="#微波背景辐射-宇宙学的观测基础" class="headerlink" title="微波背景辐射, 宇宙学的观测基础"></a>微波背景辐射, 宇宙学的观测基础</h3><h3 id="天文学的未来"><a href="#天文学的未来" class="headerlink" title="天文学的未来"></a>天文学的未来</h3><blockquote><p>已知远远少于未知</p><p>天文学未来一百年主要工作是: “两暗一黑三起源”, 暗物质, 暗能量, 黑洞, 宇宙起源, 天体起源和生命起源</p><p>观测是天文学基础, 所以望远镜等仪器设备发展是未来天文学的驱动力</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/articles/2019/09/07/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/"/>
+      <url>/articles/2019/09/07/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="普通投资者的优势"><a href="#普通投资者的优势" class="headerlink" title="普通投资者的优势"></a>普通投资者的优势</h2><ul><li>不用舍易求难, 舍近求远</li><li>没用同行的压力</li></ul><h2 id="多元分散"><a href="#多元分散" class="headerlink" title="多元分散"></a>多元分散</h2><ul><li>我们很容易因为自己过去的经历就对某一种资产有特殊偏好, 这样很容易让你措施最快的资产品类</li><li>即使是短期, 也很难预测哪类资产上涨比较快</li><li>投资不要对资产有明显的偏好</li></ul><h2 id="择时陷阱"><a href="#择时陷阱" class="headerlink" title="择时陷阱"></a>择时陷阱</h2><ul><li>对于股市来说, 一年中最好的那些交易日分布非常不均匀, 而且与牛市还是熊市无关, 一旦错过它们, 对于投资回报率来说就是致命的打击. 所以短期来看, 我们很难通过择时获得超额回报</li><li>准确判断牛市熊市的来临时间非常难</li><li>避免轻易择时, 避免押注短期的市场走势, 我们就又能避免一种亏损, 离投资成功更进一步</li></ul><h2 id="宏观迷信"><a href="#宏观迷信" class="headerlink" title="宏观迷信"></a>宏观迷信</h2><ul><li>宏观经济很重要, 但影响的因素多且复杂, 即使是凯恩斯/席勒这样的大师, 也无法依据宏观经济指标来赚钱</li><li>与其把精力放在研究宏观经济这种重要但不可知的事情上, 不如关注更小更具体可操作的事务</li></ul><h2 id="风险度量"><a href="#风险度量" class="headerlink" title="风险度量"></a>风险度量</h2><ul><li>很多时候我们并不理解什么是风险, 总以为亏损并不会发生在我们身上</li><li>量化风险是我们的本能, 但风险不能被量化, 所以不应该去衡量风险本身, 而要去衡量风险爆发之后的结果</li><li>买入任何金融产品之前都要问自己一遍: 如果接下来价格跌掉一半, 我是否能理解发生了什么, 我有什么应对的方法, 如果回答不了, 就不要做这笔投资, 直到弄清楚这个问题</li></ul><h2 id="海外配置"><a href="#海外配置" class="headerlink" title="海外配置"></a>海外配置</h2><ul><li>资产增值跟国家经济增长没有必然联系, 所以不能因为中国经济发展好就不投资海外资产</li><li>做海外投资也不能只挑熟悉的, 因为全球股市表现最好的国家和地区, 很多我们都想不到</li><li>想要投资全球市场, 有很多产品可以实现, 很多主流大基金都能坐拥全世界所有主要股市的市场</li></ul><h2 id="何时卖出一支股票"><a href="#何时卖出一支股票" class="headerlink" title="何时卖出一支股票"></a>何时卖出一支股票</h2><ul><li>会买的是徒弟, 会卖的是师傅</li><li>当发现资产更好的投资去处, 可以卖掉</li><li>个人投资是无限循环游戏, 所以不要因为价高而卖, 而要因为更加合适的标的</li></ul><h2 id="指数基金"><a href="#指数基金" class="headerlink" title="指数基金"></a>指数基金</h2><ul><li>想挑中一支好的股票是一件非常难的事情, 上市公司里面的烂公司数量远远大于好公司(全美前500, 随时间流逝, 只有15%能保持稳定发展)</li><li>即使是名气很大的公司, 也很难长时间保持竞争力</li><li>哪怕是挑中了好公司, 等到有好收益的那一天也是路途漫长(亚马逊2003-2008五年回报5%)</li><li>作为普通投资者, 放弃个股吗选指数基金可能是更明智的选择</li></ul><h2 id="安全边际"><a href="#安全边际" class="headerlink" title="安全边际"></a>安全边际</h2><ul><li>好公司不等于好股票, 买入时价格过高也不划算</li><li>应当留出足够的安全边际</li></ul><h2 id="抄底哲学"><a href="#抄底哲学" class="headerlink" title="抄底哲学"></a>抄底哲学</h2><ul><li>不要抄底, 不要”接飞刀”</li><li>即使是抄底, 也尽量抄市场的底, 而不是个股, 有太多股价一直跌倒破产的公司</li></ul><h2 id="主动管理"><a href="#主动管理" class="headerlink" title="主动管理"></a>主动管理</h2><ul><li>研究表明, 无论是从三年, 五年, 还是更长的时间维度看, 大多数的主动型基金, 专业人士都跑不赢大盘</li></ul><h2 id="交易成本"><a href="#交易成本" class="headerlink" title="交易成本"></a>交易成本</h2><ul><li>成本对投资收益的影响远比我们想象的大得多, 哪怕只在成本上节约一点点, 长期来看也会大幅度提高收益<br><img src="https://upload-images.jianshu.io/upload_images/14532288-4f453fb776825000.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="成本.png"></li></ul><h2 id="最重要的投资心法"><a href="#最重要的投资心法" class="headerlink" title="最重要的投资心法"></a>最重要的投资心法</h2><ul><li>保持诚实和敬畏之心</li></ul><h2 id="过度自信"><a href="#过度自信" class="headerlink" title="过度自信"></a>过度自信</h2><ul><li>赚钱的时候一定要思考是因为运气还是还是能力, 如果是运气就不能作为下一次投资的参考</li><li>避免过度自信: 把自己的投资逻辑记下来, 以便日后可以对比分析, 还有及时止损</li></ul><h2 id="反向复利-慢慢变富"><a href="#反向复利-慢慢变富" class="headerlink" title="反向复利: 慢慢变富"></a>反向复利: 慢慢变富</h2><ul><li>我们应该接受一个事实: 通过投资变富其实是一个相对漫长的过程</li><li>接受慢慢变富让我们认识到负复利对我们的长期回报率会产生很大的影响</li><li>高风险/高回报的项目, 回报要足够高, 做好全部亏损的准备</li></ul><h2 id="利益错位-如何对待别人的投资建议"><a href="#利益错位-如何对待别人的投资建议" class="headerlink" title="利益错位: 如何对待别人的投资建议"></a>利益错位: 如何对待别人的投资建议</h2><ul><li>先看利益是否一致, 对方立场是否客观, 再去寻找需要的信息, 然后定夺</li></ul><h2 id="场外因素"><a href="#场外因素" class="headerlink" title="场外因素"></a>场外因素</h2><ul><li>维护独立做决策的能力</li><li>保持场外赚钱的能力, 也就是投资之外的收入</li></ul><h2 id="五大原则-投资简单-但不容易"><a href="#五大原则-投资简单-但不容易" class="headerlink" title="五大原则: 投资简单, 但不容易"></a>五大原则: 投资简单, 但不容易</h2><ul><li>多元分散</li><li>被动为主</li><li>降低成本</li><li>保持恒心</li><li>不懂不做</li></ul><h2 id="收益与回撤"><a href="#收益与回撤" class="headerlink" title="收益与回撤"></a>收益与回撤</h2><ul><li>最大回撤: 曾到过的高点与现在的差值比上最大值, 最高150, 现在120, 最大回撤 150 - 120 / 150 = 20%</li><li>构建投资组合的目的: 管理最大回撤指标的情况下获取长期收益</li><li>大类资产配置对最大回撤指标和组合的波动性有决定性的影响, 所以主要分析大类资产</li><li>构建投资组合的时候, 谨记五大原则</li></ul><h2 id="大类资产"><a href="#大类资产" class="headerlink" title="大类资产"></a>大类资产</h2><p><img src="https://upload-images.jianshu.io/upload_images/14532288-9d83d888aaaea1b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="大类资产收益率与最大回撤.png"></p><h2 id="长期投资策略"><a href="#长期投资策略" class="headerlink" title="长期投资策略"></a>长期投资策略</h2><ul><li><p>永久组合; 股票, 国债, 现金, 黄金四等分, 不在于高回报而在于稳定</p></li><li><p>全天候组合<br><img src="https://upload-images.jianshu.io/upload_images/14532288-7e286d790f60dc71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="全天候组合.png"></p></li><li><p>斯文森组合</p></li></ul><h2 id="股票投资策略进阶-因子投资"><a href="#股票投资策略进阶-因子投资" class="headerlink" title="股票投资策略进阶: 因子投资"></a>股票投资策略进阶: 因子投资</h2><ul><li>用来解释股票涨跌和表现的各种原因和归纳<br><img src="https://upload-images.jianshu.io/upload_images/14532288-412e8cbe2988ffc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="因子投资.png"></li></ul><h2 id="定投基金指数-投资中国股市能赚钱吗"><a href="#定投基金指数-投资中国股市能赚钱吗" class="headerlink" title="定投基金指数: 投资中国股市能赚钱吗"></a>定投基金指数: 投资中国股市能赚钱吗</h2><ul><li>上证指数的编制缺陷:<ol><li>漏掉了深圳证交所的股票</li><li>上证指数对新发行的股票纳入期非常短</li><li>采用的计算方法是全市值加权, 而不是流通市值加权</li></ol></li></ul><h2 id="和常识-时间与概率站在一起"><a href="#和常识-时间与概率站在一起" class="headerlink" title="和常识, 时间与概率站在一起"></a>和常识, 时间与概率站在一起</h2>]]></content>
       
       
       

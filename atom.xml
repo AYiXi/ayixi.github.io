@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>MengLVLi</title>
+  <title>AYiXi</title>
   
   <subtitle>AYiXi</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ayiix.github.io/"/>
-  <updated>2019-09-06T08:10:41.039Z</updated>
+  <updated>2019-09-05T07:45:35.143Z</updated>
   <id>https://ayiix.github.io/</id>
   
   <author>
@@ -17,34 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>fd</title>
-    <link href="https://ayiix.github.io/articles/2019/09/06/fd/"/>
-    <id>https://ayiix.github.io/articles/2019/09/06/fd/</id>
-    <published>2019-09-06T08:09:54.000Z</published>
-    <updated>2019-09-06T08:10:41.039Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;部署网站成功&quot;&gt;&lt;a href=&quot;#部署网站成功&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ok</title>
-    <link href="https://ayiix.github.io/articles/2019/09/06/ok/"/>
-    <id>https://ayiix.github.io/articles/2019/09/06/ok/</id>
-    <published>2019-09-06T07:26:17.000Z</published>
-    <updated>2019-09-06T07:26:17.345Z</updated>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/python/quan-zhan-kai-fa-vue-django-rest-framework/quan-zhan-kai-fa-vue-django-rest-framework/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/python/quan-zhan-kai-fa-vue-django-rest-framework/quan-zhan-kai-fa-vue-django-rest-framework/</id>
+    <published>2019-09-07T06:38:20.775Z</published>
+    <updated>2019-09-05T07:45:35.143Z</updated>
     
     <summary type="html">
     
@@ -55,11 +32,11 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://ayiix.github.io/articles/2019/09/06/hello-world/"/>
-    <id>https://ayiix.github.io/articles/2019/09/06/hello-world/</id>
-    <published>2019-09-06T07:24:13.150Z</published>
-    <updated>2019-09-06T07:24:13.150Z</updated>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/python/tensorflow/readme/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/python/tensorflow/readme/</id>
+    <published>2019-09-07T06:38:19.522Z</published>
+    <updated>2019-09-04T07:53:07.377Z</updated>
     
     <summary type="html">
     
@@ -67,7 +44,125 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;
+          &lt;h1 id=&quot;请下载PDF文件查看原图&quot;&gt;&lt;a href=&quot;#请下载PDF文件查看原图&quot; class=&quot;headerlink&quot; title=&quot;请下载PDF文件查看原图&quot;&gt;&lt;/a&gt;请下载PDF文件查看原图&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/python/python-interview-backend/readme/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/python/python-interview-backend/readme/</id>
+    <published>2019-09-07T06:38:19.457Z</published>
+    <updated>2019-04-24T12:57:33.408Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;请下载PDF文件查看原图&quot;&gt;&lt;a href=&quot;#请下载PDF文件查看原图&quot; class=&quot;headerlink&quot; title=&quot;请下载PDF文件查看原图&quot;&gt;&lt;/a&gt;请下载PDF文件查看原图&lt;/h1&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/python/django/user-model-create/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/python/django/user-model-create/</id>
+    <published>2019-09-07T06:38:19.400Z</published>
+    <updated>2019-09-06T03:52:57.120Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;关于用户系统&quot;&gt;&lt;a href=&quot;#关于用户系统&quot; class=&quot;headerlink&quot; title=&quot;关于用户系统&quot;&gt;&lt;/a&gt;关于用户系统&lt;/h3&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 django 内置的 User 系统,
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/python/celery/celery/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/python/celery/celery/</id>
+    <published>2019-09-07T06:38:19.391Z</published>
+    <updated>2019-09-05T07:54:30.693Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Celery&quot;&gt;&lt;a href=&quot;#Celery&quot; class=&quot;headerlink&quot; title=&quot;Celery&quot;&gt;&lt;/a&gt;Celery&lt;/h1&gt;&lt;h2 id=&quot;Celery-是什么&quot;&gt;&lt;a href=&quot;#Celery-是什么&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/</id>
+    <published>2019-09-07T06:38:19.379Z</published>
+    <updated>2019-09-05T07:38:54.312Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;天文学通识课&quot;&gt;&lt;a href=&quot;#天文学通识课&quot; class=&quot;headerlink&quot; title=&quot;天文学通识课&quot;&gt;&lt;/a&gt;天文学通识课&lt;/h1&gt;&lt;h3 id=&quot;宇宙学原理-天文学的第一定理&quot;&gt;&lt;a href=&quot;#宇宙学原理-天文学的第一定理&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ayiix.github.io/articles/2019/09/07/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/"/>
+    <id>https://ayiix.github.io/articles/2019/09/07/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/</id>
+    <published>2019-09-07T06:38:19.320Z</published>
+    <updated>2019-08-24T16:29:55.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;普通投资者的优势&quot;&gt;&lt;a href=&quot;#普通投资者的优势&quot; class=&quot;headerlink&quot; title=&quot;普通投资者的优势&quot;&gt;&lt;/a&gt;普通投资者的优势&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;不用舍易求难,
         
       
     
