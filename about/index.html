@@ -298,13 +298,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">6</a></span>
+    <span class="count"><a href="/" target="_blank">5</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories" target="_blank">4</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags" target="_blank">7</a></span>
+    <span class="name">标签</span>
+</div>
 
                     </div>
                     <div class="col s12 m12 l4">
@@ -317,13 +327,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">6</a></span>
+    <span class="count"><a href="/" target="_blank">5</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories" target="_blank">4</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags" target="_blank">7</a></span>
+    <span class="name">标签</span>
+</div>
 
                                 </div>
                                 <div class="title">AYiXi</div>
@@ -472,7 +492,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,6],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,5],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -514,7 +534,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"Linux","value":1},{"name":"后端","value":1},{"name":"得到","value":2},{"name":"Django","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -538,7 +558,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["linux","Celery","异步","投资学","Python","Backend","天文学"]
             }
         ],
         yAxis: [
@@ -551,7 +571,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -667,6 +687,44 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
             
+            
+            <a href="/tags/linux/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">linux</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Celery/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">Celery</span>
+            </a>
+            
+            
+            
+            <a href="/tags/异步/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">异步</span>
+            </a>
+            
+            
+            
+            <a href="/tags/投资学/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">投资学</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/tags/Backend/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">Backend</span>
+            </a>
+            
+            
+            
+            <a href="/tags/天文学/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">天文学</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -723,29 +781,29 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </main>
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
-            本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
+        <div>
+            <!-- 本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
             <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>&nbsp;主题搭建
-            <br>
+            <br> -->
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.7k</span>&nbsp;字
+                class="white-color">5.8k</span>&nbsp;字
             
             
             
             
             
-            <span id="busuanzi_container_site_pv">
+            <!-- <span id="busuanzi_container_site_pv">
                 |&nbsp;<i class="fa fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
-            </span>
+            </span> -->
             
             
-            <span id="busuanzi_container_site_uv">
+            <!-- <span id="busuanzi_container_site_uv">
                 |&nbsp;<i class="fa fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
-            </span>
+            </span> -->
             <br>
             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
             <script>
@@ -771,7 +829,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     if (String(snum).length == 1) {
                         snum = "0" + snum;
                     }
-                    document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+                    document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
                     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                 }
                 setInterval("createtime()", 250);
@@ -779,7 +837,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/AYiXi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
@@ -814,7 +872,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <i class="fa fa-rss"></i>
     </a>
 
-</div>
+</div> -->
     </div>
 </footer>
 

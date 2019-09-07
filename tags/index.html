@@ -294,40 +294,126 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/linux/" title="linux: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="linux" style="background-color: #F9EBEA;">linux
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Celery/" title="Celery: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Celery" style="background-color: #F5EEF8;">Celery
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/异步/" title="异步: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="异步" style="background-color: #D5F5E3;">异步
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/投资学/" title="投资学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="投资学" style="background-color: #E8F8F5;">投资学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Python/" title="Python: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Python" style="background-color: #FEF9E7;">Python
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Backend/" title="Backend: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Backend" style="background-color: #F8F9F9;">Backend
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/天文学/" title="天文学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="天文学" style="background-color: #82E0AA;">天文学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
 
     
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"linux","weight":1,"link":"https://ayiix.github.io/tags/linux/"},{"text":"Celery","weight":1,"link":"https://ayiix.github.io/tags/Celery/"},{"text":"异步","weight":1,"link":"https://ayiix.github.io/tags/异步/"},{"text":"投资学","weight":1,"link":"https://ayiix.github.io/tags/投资学/"},{"text":"Python","weight":1,"link":"https://ayiix.github.io/tags/Python/"},{"text":"Backend","weight":1,"link":"https://ayiix.github.io/tags/Backend/"},{"text":"天文学","weight":1,"link":"https://ayiix.github.io/tags/天文学/"}], {
+        autoResize: true
+    });
+</script>
+    
 
 </main>
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
-            本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
+        <div>
+            <!-- 本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
             <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>&nbsp;主题搭建
-            <br>
+            <br> -->
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.7k</span>&nbsp;字
+                class="white-color">5.8k</span>&nbsp;字
             
             
             
             
             
-            <span id="busuanzi_container_site_pv">
+            <!-- <span id="busuanzi_container_site_pv">
                 |&nbsp;<i class="fa fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
-            </span>
+            </span> -->
             
             
-            <span id="busuanzi_container_site_uv">
+            <!-- <span id="busuanzi_container_site_uv">
                 |&nbsp;<i class="fa fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
-            </span>
+            </span> -->
             <br>
             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
             <script>
@@ -353,7 +439,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     if (String(snum).length == 1) {
                         snum = "0" + snum;
                     }
-                    document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+                    document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
                     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                 }
                 setInterval("createtime()", 250);
@@ -361,7 +447,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/AYiXi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
@@ -396,7 +482,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <i class="fa fa-rss"></i>
     </a>
 
-</div>
+</div> -->
     </div>
 </footer>
 

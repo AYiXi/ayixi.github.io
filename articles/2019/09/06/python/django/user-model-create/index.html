@@ -4,9 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python, crawl, django, linux">
-    <meta name="description" content="请下载PDF文件查看原图
-">
+    <meta name="keywords" content="Django 的一些笔记, python, crawl, django, linux">
+    <meta name="description" content="关于用户系统
+
+使用 django 内置的 User 系统, 需要重新定制
+前后台通用一个 User 系统
+
+
+自定义 User 模型
+
+创建一个 xfzauth(内置的app叫auth) 的 app, 全部重写,  继承自 Abstrac">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>AYiXi</title>
+    <title>Django 的一些笔记 | AYiXi</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -261,13 +268,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        
+                        Django 的一些笔记
                     </div>
                 </div>
             </div>
@@ -376,12 +383,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python/" target="_blank">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                            <a href="/tags/Backend/" target="_blank">
+                                <span class="chip bg-color">Backend</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Django/" class="post-category" target="_blank">
+                                Django
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -389,14 +413,14 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-07
+                    2019-09-06
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        10
+                        101
                     </div>
                     
 
@@ -419,7 +443,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="请下载PDF文件查看原图"><a href="#请下载PDF文件查看原图" class="headerlink" title="请下载PDF文件查看原图"></a>请下载PDF文件查看原图</h1><p><img src="https://github.com/AYiXi/Learn-for-life/blob/master/Python/Tensorflow/Tensorflow.jpg" alt="Tensorflow"></p>
+                <h3 id="关于用户系统"><a href="#关于用户系统" class="headerlink" title="关于用户系统"></a>关于用户系统</h3><blockquote>
+<ol>
+<li>使用 django 内置的 User 系统, 需要重新定制</li>
+<li>前后台通用一个 User 系统</li>
+</ol>
+</blockquote>
+<h3 id="自定义-User-模型"><a href="#自定义-User-模型" class="headerlink" title="自定义 User 模型"></a>自定义 User 模型</h3><blockquote>
+<ol>
+<li><p>创建一个 xfzauth(内置的app叫auth) 的 app, 全部重写,  继承自 AbstractBaseUser</p>
+</li>
+<li><p>定义 UserManager</p>
+</li>
+<li><p>设置 AUTH_USER_MODEL</p>
+</li>
+<li><p>映射到数据库中</p>
+</li>
+<li><p>主键是uuid, 用于保密用户数量信息(shortuuidfield)</p>
+</li>
+<li></li>
+</ol>
+</blockquote>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> shortuuidfield <span class="token keyword">import</span> ShortUUIDField
+    <span class="token keyword">class</span> <span class="token class-name">User</span><span class="token punctuation">(</span>AbstractBaseUser<span class="token punctuation">,</span> PermissionMixin<span class="token punctuation">)</span>
+        uid <span class="token operator">=</span> ShortUUIDField<span class="token punctuation">(</span>primary_key<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+        USERNAME_FIELD <span class="token operator">=</span> <span class="token string">'telephone'</span>
+        REQUIRED_FIELDS <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'username'</span><span class="token punctuation">]</span></code></pre>
 
             </div>
             <hr/>
@@ -454,9 +504,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《》
+                    《Django 的一些笔记》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/articles/2019/09/07/python/tensorflow/readme/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/articles/2019/09/06/python/django/user-model-create/" property="cc:attributionName"
                rel="cc:attributionURL">
                 AYiXi
             </a> 采用
@@ -500,19 +550,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/articles/2019/09/07/python/quan-zhan-kai-fa-vue-django-rest-framework/quan-zhan-kai-fa-vue-django-rest-framework/">
+                <a href="/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="天文学通识课">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">天文学通识课</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            天文学通识课宇宙学原理, 天文学的第一定理
+地球不特殊, 地球上的规律在其他地方也使用
+
+光谱分析, 宇宙学原理的实证
+光谱分析是天文学里的显微镜, 能知道上亿光年距离的天体的元素构成
+天文学家在恒星和其他天体上面验证了宇宙学原理
+宇宙膨胀
                         
                     </div>
                     <div class="publish-info">
@@ -521,11 +577,23 @@
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            AYiXi
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/得到/" class="post-category" target="_blank">
+                                    得到
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/天文学/" target="_blank">
+                        <span class="chip bg-color">天文学</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -537,33 +605,53 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/articles/2019/09/07/python/python-interview-backend/readme/">
+                <a href="/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="个人投资课">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">个人投资课</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            请下载PDF文件查看原图
+                            普通投资者的优势
+不用舍易求难, 舍近求远
+没用同行的压力
 
+多元分散
+我们很容易因为自己过去的经历就对某一种资产有特殊偏好, 这样很容易让你措施最快的资产品类
+即使是短期, 也很难预测哪类资产上涨比较快
+投资不要对资产有明显的偏好
+
+择时
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            AYiXi
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/得到/" class="post-category" target="_blank">
+                                    得到
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/投资学/" target="_blank">
+                        <span class="chip bg-color">投资学</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -712,29 +800,29 @@
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
-            本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
+        <div>
+            <!-- 本站由&nbsp;&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>&nbsp;基于
             <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>&nbsp;主题搭建
-            <br>
+            <br> -->
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.7k</span>&nbsp;字
+                class="white-color">5.8k</span>&nbsp;字
             
             
             
             
             
-            <span id="busuanzi_container_site_pv">
+            <!-- <span id="busuanzi_container_site_pv">
                 |&nbsp;<i class="fa fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
                     class="white-color"></span>&nbsp;次
-            </span>
+            </span> -->
             
             
-            <span id="busuanzi_container_site_uv">
+            <!-- <span id="busuanzi_container_site_uv">
                 |&nbsp;<i class="fa fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
                     class="white-color"></span>&nbsp;人
-            </span>
+            </span> -->
             <br>
             <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
             <script>
@@ -760,7 +848,7 @@
                     if (String(snum).length == 1) {
                         snum = "0" + snum;
                     }
-                    document.getElementById("timeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+                    document.getElementById("timeDate").innerHTML = "已运行 " + dnum + " 天 ";
                     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
                 }
                 setInterval("createtime()", 250);
@@ -768,7 +856,7 @@
             
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/AYiXi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fa fa-github"></i>
     </a>
@@ -803,7 +891,7 @@
         <i class="fa fa-rss"></i>
     </a>
 
-</div>
+</div> -->
     </div>
 </footer>
 
