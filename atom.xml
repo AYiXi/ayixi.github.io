@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ayixi.github.io/"/>
-  <updated>2019-09-07T16:47:38.092Z</updated>
+  <updated>2019-09-08T15:25:42.260Z</updated>
   <id>https://ayixi.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySql 基本知识点总结</title>
+    <link href="https://ayixi.github.io/articles/2019/09/08/sql/mysql/"/>
+    <id>https://ayixi.github.io/articles/2019/09/08/sql/mysql/</id>
+    <published>2019-09-08T14:12:00.000Z</published>
+    <updated>2019-09-08T15:25:42.260Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Linux-下添加密码-开放外网&quot;&gt;&lt;a href=&quot;#Linux-下添加密码-开放外网&quot; class=&quot;headerlink&quot; title=&quot;Linux 下添加密码, 开放外网&quot;&gt;&lt;/a&gt;Linux 下添加密码, 开放外网&lt;/h3&gt;&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="DB" scheme="https://ayixi.github.io/categories/DB/"/>
+    
+    
+      <category term="mysql" scheme="https://ayixi.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux部署相关环境</title>
@@ -75,7 +102,7 @@
     <link href="https://ayixi.github.io/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/"/>
     <id>https://ayixi.github.io/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/</id>
     <published>2019-09-05T04:12:00.000Z</published>
-    <updated>2019-09-08T15:13:51.321Z</updated>
+    <updated>2019-09-08T15:16:47.612Z</updated>
     
     <summary type="html">
     

@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="python, crawl, django, linux">
-    <meta name="description" content="AYiXi">
+    <meta name="keywords" content="标签: mysql, python, crawl, django, linux">
+    <meta name="description" content="标签: mysql | AYiXi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>AYiXi</title>
+    <title>标签: mysql | AYiXi</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -238,56 +238,9 @@
 
 </header>
 
-
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -308,151 +261,72 @@
 // 每天切换 banner 图.  Switch banner image every day.
 $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                <a href="https://space.bilibili.com/37329542" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fa fa-github-alt"></i>Bilibili
-                </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/AYiXi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fa fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:821346679@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fa fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=821346679" class="tooltipped" data-tooltip="QQ联系我: 821346679" data-position="top" data-delay="50">
-        <i class="fa fa-qq"></i>
-    </a>
-
-
-
-
-
-    <a href="https://www.zhihu.com/people/mengLV/activities" data-tooltip="关注我的知乎: https://www.zhihu.com/people/mengLV/activities" data-position="top" data-delay="50">
-        <i class="fa fa-inverse">知</i>
-    </a>
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fa fa-rss"></i>
-    </a>
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-$(function () {
-    let coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
-
-    let carouselIntervalId;
-    
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 3000);
-    };
-    autoCarousel();
-    
-
-    let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
-        
-    };
-
-    
-    // prev and next cover post.
-    $('#prev-cover').click(function () {
-        coverSlider.carousel('prev');
-        restartPlay();
-    });
-    $('#next-cover').click(function () {
-        coverSlider.carousel('next');
-        restartPlay();
-    });
-    
-});
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;人生需要诗意
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            你看过晨曦时满天露珠折射朝霞的光影吗?<br>你看过中午艳阳下点缀着蝉鸣仿佛在假寐的山林吗?<br>你看过夕阳里来势汹汹卷走回翔暮鸦的火烧云吗?<br>你看过那忽明忽暗的彩云追月吗?
-        </div>
-    </div>
-</div>
-                    
 
-                    
-
-                    
-
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                </div>
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fa fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/mysql/" title="mysql: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="mysql" style="background-color: #F9EBEA;">mysql
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/linux/" title="linux: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="linux" style="background-color: #F5EEF8;">linux
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/天文学/" title="天文学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="天文学" style="background-color: #D5F5E3;">天文学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/投资学/" title="投资学: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="投资学" style="background-color: #E8F8F5;">投资学
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
-    
+</div>
 
     
 
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="mysql" data-aos="fade-up">
                 <div class="card">
                     <a href="/articles/2019/09/08/sql/mysql/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="MySql 基本知识点总结">
@@ -460,19 +334,7 @@ $(function () {
                             <span class="card-title">MySql 基本知识点总结</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Linux 下添加密码, 开放外网# 安装
-apt-get install mysql-server
-apt-get install mysql-client
-
-
-# 登录mysql    
-mysql -u root -p 或 mysql
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-08
@@ -482,195 +344,19 @@ mysql -u root -p 或 mysql
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
                                 <a href="/categories/DB/" class="post-category" target="_blank">
-                                    DB
+                                DB
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/mysql/" target="_blank">
-                            <span class="chip bg-color">mysql</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/articles/2019/09/07/linux/linux-bu-shu-xiang-guan-huan-jing/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Linux部署相关环境">
-                            
-                            <span class="card-title">Linux部署相关环境</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Linux安装部署环境Java环境部署
-下载对应tar.gz
-
-上传服务器
-
-服务器配置
-1.解压
-[root@localhost Java]# tar -zxvf jdk-8u211-linux-x64.tar.gz
-2.解压完毕需要配置
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Linux/" class="post-category" target="_blank">
-                                    Linux
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/linux/" target="_blank">
-                            <span class="chip bg-color">linux</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/articles/2019/09/07/de-dao/gao-shuang-tian-wen-xue-tong-shi-ke/gao-shuang-tian-wen-xue-tong-shi-ke/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="天文学通识课">
-                            
-                            <span class="card-title">天文学通识课</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                天文学通识课宇宙学原理, 天文学的第一定理
-地球不特殊, 地球上的规律在其他地方也使用
-
-光谱分析, 宇宙学原理的实证
-光谱分析是天文学里的显微镜, 能知道上亿光年距离的天体的元素构成
-天文学家在恒星和其他天体上面验证了宇宙学原理
-宇宙膨胀
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/得到/" class="post-category" target="_blank">
-                                    得到
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/天文学/" target="_blank">
-                            <span class="chip bg-color">天文学</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="个人投资课">
-                            
-                            <span class="card-title">个人投资课</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                普通投资者的优势
-不用舍易求难, 舍近求远
-没用同行的压力
-
-多元分散
-我们很容易因为自己过去的经历就对某一种资产有特殊偏好, 这样很容易让你措施最快的资产品类
-即使是短期, 也很难预测哪类资产上涨比较快
-投资不要对资产有明显的偏好
-
-择时
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/得到/" class="post-category" target="_blank">
-                                    得到
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/投资学/" target="_blank">
-                            <span class="chip bg-color">投资学</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
         </div>
     </article>
-
 </main>
-
 
 
 <footer class="page-footer bg-color">
