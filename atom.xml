@@ -71,71 +71,11 @@
   </entry>
   
   <entry>
-    <title>Celery的运用</title>
-    <link href="https://ayixi.github.io/articles/2019/09/07/python/celery/celery/"/>
-    <id>https://ayixi.github.io/articles/2019/09/07/python/celery/celery/</id>
-    <published>2019-09-07T04:12:00.000Z</published>
-    <updated>2019-09-07T15:00:20.123Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Celery&quot;&gt;&lt;a href=&quot;#Celery&quot; class=&quot;headerlink&quot; title=&quot;Celery&quot;&gt;&lt;/a&gt;Celery&lt;/h1&gt;&lt;h2 id=&quot;Celery-是什么&quot;&gt;&lt;a href=&quot;#Celery-是什么&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="后端" scheme="https://ayixi.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="Celery" scheme="https://ayixi.github.io/tags/Celery/"/>
-    
-      <category term="异步" scheme="https://ayixi.github.io/tags/%E5%BC%82%E6%AD%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Django 的一些笔记</title>
-    <link href="https://ayixi.github.io/articles/2019/09/06/python/django/user-model-create/"/>
-    <id>https://ayixi.github.io/articles/2019/09/06/python/django/user-model-create/</id>
-    <published>2019-09-06T04:12:00.000Z</published>
-    <updated>2019-09-07T15:48:52.394Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;关于用户系统&quot;&gt;&lt;a href=&quot;#关于用户系统&quot; class=&quot;headerlink&quot; title=&quot;关于用户系统&quot;&gt;&lt;/a&gt;关于用户系统&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;使用 django 内置的 User 系统,
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Django" scheme="https://ayixi.github.io/categories/Django/"/>
-    
-    
-      <category term="Python" scheme="https://ayixi.github.io/tags/Python/"/>
-    
-      <category term="Backend" scheme="https://ayixi.github.io/tags/Backend/"/>
-    
-  </entry>
-  
-  <entry>
     <title>个人投资课</title>
     <link href="https://ayixi.github.io/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/"/>
     <id>https://ayixi.github.io/articles/2019/09/05/de-dao/zhang-xiao-yu-ge-ren-tou-zi-ke/zhang-xiao-yu-ge-ren-tou-zi-ke/</id>
     <published>2019-09-05T04:12:00.000Z</published>
-    <updated>2019-09-07T15:46:37.225Z</updated>
+    <updated>2019-09-08T15:13:51.321Z</updated>
     
     <summary type="html">
     
